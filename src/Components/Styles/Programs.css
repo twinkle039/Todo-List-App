@@ -1,9 +1,10 @@
 .Body {
   padding: 0px 20px 0px 20px;
+  background-color: black;
 }
 .Header {
   display: flex;
-  height: 103px;
+  height: 100px;
   border-bottom: #00bd13 0px solid;
   -webkit-box-shadow: 0px 0px 18px -10px #00bd13; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 0px 0px 18px -10px #00bd13; /* Firefox 3.5 - 3.6 */
@@ -28,19 +29,22 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0px 10px 0px 10px;
-  height: 30px;
+  height: 20px;
   margin: 10px 0px 10px 10px;
   border-left: #ff5c5c solid 3px;
   align-items: center;
+  cursor: grab;
 }
 .ProgramText {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
+  background-color: black;
+  border: none;
 }
 .Team {
   display: flex;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .TeamText {
   color: #00d1ff;
@@ -48,12 +52,11 @@
   font-weight: 500;
 }
 .LocationBox {
-  margin-top: 20px;
   background-color: #1f1f1f;
-  padding: 80px;
+  padding: 10vh;
 }
 .AddButtonContainer {
-  margin: 20px 0px 20px 0px;
+  /* margin: 20px 0px 20px 0px; */
   display: flex;
   justify-content: center;
 }
@@ -82,9 +85,24 @@
   color: #fff;
 }
 .Paper {
-  padding: 2px 4px 2px 4px;
+  padding: 0px 1px 0px 1px;
+  /* background-color: #00bd13; */
+}
+.gridInput {
+  border: none;
   text-align: center;
   color: white;
   background-color: #00bd13;
   font-size: 12px;
+  width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
