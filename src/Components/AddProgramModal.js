@@ -196,27 +196,27 @@ const AddProgramModal = (props) => {
           />
           <div
             style={{
-              padding: "0px 5px 0px 5px",
               height: "55%",
-              overflowY: "auto",
+              overflowY: "scroll",
+              margin: "0px 5px 0px 10px",
+              // width: "95%",
             }}
           >
             {/* grid+++ */}
             {activities &&
               activities.map((activity, idx) => {
                 return activity.Program_ID == currentProgram.Program_ID ? (
-                  <Grid container spacing={1} justifyContent="center">
-                    <Grid item xs={1} className="Paper">
+                  <Grid container spacing={2} xs={12} sm={12}>
+                    <Grid item xs sm className="Paper">
                       <input
                         type="text"
                         //   onChange={e => handleChange(idx, e)}
                         value={activity.Order}
                         //   disabled={true}
-                        style={{ color: "#fff" }}
                         className="gridInput"
                       />
                     </Grid>
-                    <Grid item xs={1} className="Paper">
+                    <Grid item xs sm className="Paper">
                       <input
                         type="number"
                         onChange={(e) => handleChange(idx, e, "Duration")}
@@ -224,7 +224,7 @@ const AddProgramModal = (props) => {
                         className="gridInput"
                       />
                     </Grid>
-                    <Grid item xs={5} className="Paper">
+                    <Grid item xs={5} sm={5} className="Paper">
                       <input
                         type="text"
                         onChange={(e) => handleChange(idx, e, "Description")}
@@ -232,7 +232,7 @@ const AddProgramModal = (props) => {
                         className="gridInput"
                       />
                     </Grid>
-                    <Grid item xs={4} className="Paper">
+                    <Grid item xs={4} sm={4} className="Paper">
                       <input
                         type="text"
                         onChange={(e) => handleChange(idx, e, "Performer")}
@@ -240,7 +240,7 @@ const AddProgramModal = (props) => {
                         className="gridInput"
                       />
                     </Grid>
-                    <Grid item xs={1}>
+                    <Grid item xs sm className="Paper">
                       <div
                         style={
                           {

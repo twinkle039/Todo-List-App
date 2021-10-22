@@ -85,8 +85,9 @@
   color: #fff;
 }
 .Paper {
-  padding: 0px 1px 0px 1px;
+  /* padding: 5px 0px 5px 0px; */
   /* background-color: #00bd13; */
+  margin: 0;
 }
 .gridInput {
   border: none;
